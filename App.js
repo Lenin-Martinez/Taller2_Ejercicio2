@@ -11,12 +11,12 @@ const Drawer = createDrawerNavigator();
 function Integrantes({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'flex-start', justifyContent: 'center' }}>
-      <Text style={styles.item}>Marroquin Echegoyen, Erika Alondra ME180102</Text>
-      <Text style={styles.item}>ME180102</Text>
+      <Text style={styles.integrantes}>Marroquin Echegoyen, Erika Alondra ME180102</Text>
+      <Text style={styles.integrantes}>ME180102</Text>
       <Text>_________________________________</Text>
 
-      <Text style={styles.item}>Martinez Huezo, Lenin Steven MH180095</Text>
-      <Text style={styles.item}>MH180095</Text>
+      <Text style={styles.integrantes}>Martinez Huezo, Lenin Steven MH180095</Text>
+      <Text style={styles.integrantes}>MH180095</Text>
       <Text>_________________________________</Text>
       <Text>{'\n\n'}</Text>
 
@@ -153,6 +153,12 @@ const styles = StyleSheet.create({
   item: {
     padding: 10,
     fontSize: 22,
+    height: 44,
+    fontWeight: 'bold',
+  },
+  integrantes: {
+    padding: 10,
+    fontSize: 19,
     height: 44,
     fontWeight: 'bold',
   },
